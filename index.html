@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Sharmy Soft</title>
+<!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<script language="javascript">
+function ss(f){
+	a = f.acres.value;
+	h = a * 0.404686;
+	
+	urea = a * 90;
+	csp = a * 22;
+	mop = a * 24;
+	
+	f.hectares.value = h;
+	f.urea.value = urea;
+	f.csp.value = csp;
+	f.mop.value = mop;
+}
+</script>
+</head>
+
+<body>
+<div class="container">
+<form action="" method="get" name="f1" onSubmit="ss(this); return false;" class="form-signin">
+<h2 class="form-signin-heading">Please Enter Acres Value</h2>
+<label for="inputEmail" class="sr-only">Acres</label> 
+<input type="number" step="any" name="acres" class="form-control" /> 
+<button class="btn btn-lg btn-primary btn-block" type="submit">Calculate >></button><br>
+<br>
+
+
+Hectares <input type="text" name="hectares" class="form-control"/> <br>
+
+Urea <input type="text" name="urea" class="form-control"/><br>
+
+CSP <input type="text" name="csp" class="form-control"/><br>
+
+MOP <input type="text" name="mop" class="form-control"/><br>
+
+</form>
+&copy; Sharmy & Sutharshan
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
